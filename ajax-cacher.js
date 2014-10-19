@@ -1,5 +1,5 @@
-window.ajaxCacher = function(){
-    this.get = function(url, cb){
+var ajaxCacher = {
+    get : function(url, cb){
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function(){
             if (xhr.readyState == 4){
